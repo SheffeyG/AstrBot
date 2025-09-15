@@ -87,10 +87,9 @@
           </v-btn>
         </v-card-title>
 
-        <v-divider></v-divider>
-
         <v-expand-transition>
           <v-card-text class="pa-0" v-if="showStatus">
+            <v-divider></v-divider>
             <v-card-text class="px-4 py-3">
               <v-alert v-if="providerStatuses.length === 0" type="info" variant="tonal">
                 {{ tm('availability.noData') }}
@@ -142,10 +141,9 @@
           </v-btn>
         </v-card-title>
 
-        <v-divider></v-divider>
-
         <v-expand-transition>
           <v-card-text class="pa-0" v-if="showConsole">
+            <v-divider></v-divider>
             <ConsoleDisplayer style="background-color: #1e1e1e; height: 300px; border-radius: 0"></ConsoleDisplayer>
           </v-card-text>
         </v-expand-transition>
